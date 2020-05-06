@@ -64,8 +64,8 @@ function myFunction7() {
   }
 }
 
-function myFunction8() {
-  var x = document.getElementById("myLinks");
+function ToggleMenu() {
+  var x = $("div.navLinks");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {

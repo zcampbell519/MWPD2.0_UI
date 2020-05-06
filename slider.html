@@ -1,0 +1,5 @@
+<div class="slide" ng-repeat="image in images" ng-show="image.visible">
+    <i class="fa fa-chevron-circle-left slider-button" ng-click="prev()"></i>
+    <img ng-src="{{image.src}}" />
+    <i class="fa fa-chevron-circle-right slider-button" ng-click=next()></i>
+</div>

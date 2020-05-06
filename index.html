@@ -1,281 +1,33 @@
-<!doctype html>
-<html lang="en">
-<head>
+<!doctype html >
+<html lang="en" ng-app="MTWPApp">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<title>Untitled Document</title>
-<link rel="stylesheet" href="./css/styles3.css" type="text/css">
-<script  src = "js/index.js"></script> 
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montana Wood - Home</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
+    <script src="js/app/app.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/styles3.css" type="text/css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="js/app/controllers/indexController.js"></script>
+    <script src="js/app/services/imagesService.js"></script>
+    <script src="js/app/components/footer.js"></script>
+    <script src="js/app//components/header.js"></script>
+    <script src="js/app/components/search.js"></script>
+    <script src="js/app/components/directory.js"></script>
+    <script src="js/app/components/content.js"></script>
+    <script src="js/app/components/slider.js"></script>
 </head>
 
-<body>
-
-    <div class="topnav">
-        <a href="javascript:void(0);" class="activate" onclick="myFunction8()">MENU</a>
-        <div id="myLinks">
-            <a href="index.html" class="activate">HOME</a> 
-            <a href="ask.html">ASK FOR</a> 
-            <a href="why.html">WHY BUY</a> 
-            <a href="build.html">BUILD WITH</a>
-            <a href="about.html">ABOUT</a>
-        </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction8()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
-
-
-<div id="headerdiv" >
-        <img id="logoid" src="images/mwlogo.png">
-    <nav>
-        <a href="index.html" class="active">HOME</a> 
-        <a href="ask.html">ASK FOR</a> 
-        <a href="why.html">WHY BUY</a> 
-        <a href="build.html">BUILD WITH</a>
-        <a href="about.html">ABOUT</a>
-      </nav>  
-</div>
-<div  id="contentdiv">
+<body id="top">
+    <mtwp-header></mtwp-header>
     
-<table id="contenttable">
-    <tbody>
-        <tr>
-            <td id="lefttable">
-                <div id="logo2div"><img id="logoid2" src="images/mwlogo.png"></div>                
-                <div id="formdiv">
-                    
-                   
-
-                    <div id="containerLeft">
-			
-                        <h3 id="search" >Search By Product</h3><br style="line-height:3px;"/>
-                                
-                                
-                        <div class="dropdown">
-                            
-                             <button onclick="myFunction()" class="dropbtn" id ="button">Building and Industrial Materials</button>
-                             
-                                <div id="myDropdown" class="dropdown-content">
-                                    <ul class="list-group"  style="list-style-type:none;">
-                                        <li class="list-group-item"><input type="checkbox"/>Dimensional Lumber</li>
-                                        <li class="list-group-item"><input type="checkbox"/>Engineered Studs</li>
-                                        <li class="list-group-item"><input type="checkbox"/>Plywood</li>
-                                        <li class="list-group-item"><input type="checkbox"/>Beams and timbers</li>
-                                        <li class="list-group-item"><input type="checkbox"/>Trusses</li>
-                                        <li class="list-group-item"><input type="checkbox"/>Cross-laminated timber</li>
-                                        <li class="list-group-item"><input type="checkbox"/>Siding</li>
-                                        <li class="list-group-item"><input type="checkbox"/>Glulams</li>										
-                                        <li class="list-group-item"><input type="checkbox"/>Siding</li>
-                                        <li class="list-group-item"><input type="checkbox"/>Log homes and roundwood</li>
-                                        <li class="list-group-item"><input type="checkbox"/>Pulp Chips</li>
-                                    </ul>
-                                </div><br style="line-height:3px;"/>
-                                
-                            <div class="dropdown2">
-                              <button onclick="myFunction2()" class="dropbtn" id = "button2">Interior Products</button>
-                                <div id="myDropdown2" class="dropdown-content">
-                                    <ul class="list-group2" style="list-style-type:none;">
-                                        <li class="list-group-item"><input type="checkbox"/>Cabinets and Countertops&nbsp;</li>
-                                        <li class="list-group-item"><input type="checkbox"/>Doors and Windows&nbsp;</li>
-                                        <li class="list-group-item"><input type="checkbox"/>Flooring&nbsp;</li>
-                                        <li class="list-group-item"><input type="checkbox"/>Moulding and Millwork&nbsp;</li>
-                                        <li class="list-group-item"><input type="checkbox"/>Furniture&nbsp;</li>
-                                        <li class="list-group-item"><input type="checkbox"/>Particleboard&nbsp;</li>
-                                    </ul>	
-                                </div><br style="line-height:3px;"/>
-                            </div><br style="line-height:3px;"/>
-                            
-                            
-                            <div class="dropdown3">
-                              <button onclick="myFunction3()" class="dropbtn" id = "button3">OutdoorLiving / Landscape</button>
-                                <div id="myDropdown3" class="dropdown-content">
-                                    <ul class="list-group3" style="list-style-type:none;">
-                                        <li class="list-group-item"><input type="checkbox"/>Cedar Products&nbsp;</li>
-                                        <li class="list-group-item"><input type="checkbox"/>Decking&nbsp;</li>
-                                        <li class="list-group-item"><input type="checkbox"/>Fencing&nbsp;</li>
-                                        <li class="list-group-item"><input type="checkbox"/>Posts, Poles and Rails&nbsp;</li>
-                                        <li class="list-group-item"><input type="checkbox"/>Bark and Mulch&nbsp;</li>
-                                        <li class="list-group-item"><input type="checkbox"/>Compost and Soil Amendments</li>
-                                        <li class="list-group-item"><input type="checkbox"/>Erosion Control&nbsp;</li>
-                                        <li class="list-group-item"><input type="checkbox"/>Animal Bedding&nbsp;</li>										
-                                    </ul>
-                                </div><br style="line-height:3px;"/>
-                            </div>
-                            
-                            
-                             <div class="dropdown4">
-                               <button onclick="myFunction4()" class="dropbtn" id = "button4">Energy / Fuelwood</button>
-                                <div id="myDropdown4" class="dropdown-content">
-                                    <ul class="list-group4" style="list-style-type:none;">
-                                        <li class="list-group-item"><input type="checkbox"/>Pellets&nbsp;</li>
-                                        <li class="list-group-item"><input type="checkbox"/>Firewood&nbsp;</li>
-                                        <li class="list-group-item"><input type="checkbox"/>Firelogs&nbsp;</li>										
-                                        <li class="list-group-item"><input type="checkbox"/>Chips&nbsp;</li>
-                                        <li class="list-group-item"><input type="checkbox"/>BBQ Products&nbsp;</li>										
-                                    </ul>
-                                </div><br style="line-height:3px;"/>
-                            </div>
-                                
-                                
-                            <div class="dropdown5">
-                                <button onclick="myFunction5()" class="dropbtn" id = "button5">Other Woodcraft</button>
-                                    <div id="myDropdown5" class="dropdown-content">
-                                        <ul class="list-group5" style="list-style-type:none;">
-                                            <li class="list-group-item"><input type="checkbox"/>Specialty (incl: arts, crafts, musical, toys, etc.)</li>
-                                            <li class="list-group-item"><input type="checkbox"/>Signs&nbsp;</li>
-                                            <li class="list-group-item"><input type="checkbox"/>Sporting Goods&nbsp;</li>
-                
-                                        </ul>
-                                    </div>
-                                </div>
-                                
-                                
-                            <h3 id="advanced">Advanced</h3><br style="line-height:3px;"/>
-                                
-                            
-                            <div class="dropdown6">
-                                <button onclick="myFunction6()" class="dropbtn" id = "button6">Woodtype and Species</button>
-                                    <div id="myDropdown6" class="dropdown-content">
-                                        <ul class="list-group6" style="list-style-type:none;">
-                                            <li class="list-group-item"><input type="checkbox"/>Beatle Kill/Blue Stain&nbsp;</li>
-                                            <li class="list-group-item"><input type="checkbox"/>Cedar&nbsp;</li>
-                                            <li class="list-group-item"><input type="checkbox"/>Fir&nbsp;</li>
-                                            <li class="list-group-item"><input type="checkbox"/>Larch&nbsp;</li>
-                                            <li class="list-group-item"><input type="checkbox"/>Pine&nbsp;</li>
-                                            <li class="list-group-item"><input type="checkbox"/>Spruce&nbsp;</li>
-                                            <li class="list-group-item"><input type="checkbox"/>Hardwoods&nbsp;</li>
-                                            <li class="list-group-item"><input type="checkbox"/>Urban Tree Wood&nbsp;</li>
-                                            <li class="list-group-item"><input type="checkbox"/>Reclaimed/Salvaged Wood&nbsp;</li>
-                                            <li class="list-group-item"><input type="checkbox"/>Recycled Content&nbsp;</li>
-                                        </ul>	
-                                            
-                                    </div><br style="line-height:3px;"/>
-                            </div>
-                
-                
-                            <div class="dropdown7">
-                                <button onclick="myFunction7()" class="dropbtn" id = "button7">Certification and Sustainable Product</button>
-                                    <div id="myDropdown7" class="dropdown-content">
-                                        <ul class="list-group7" style="list-style-type:none;">
-                                            <li class="list-group-item"><input type="checkbox"/>Forest Stewardship Council&nbsp;&nbsp;</li>
-                                        </ul>
-                                    </div>
-                  
-                            </div>
-                
-                
-                            <h3 id="or" >Or <br />Search By Company<br />Name</h3>
-                            
-                            <div>
-                                <input type="text" id="ctext" name="text_company" placeholder = "Type Company Name">
-                            </div><br style="line-height:3px;"/>
-                            <div>
-                                <input id="submitx" type="submit" value="Submit">&nbsp;
-                                <input id="submitx2" type="submit" value="Clear All">&nbsp;
-                                <input id="submitx3" type="submit" value ="Print Results">
-                            </div><br style="line-height:3px;"/>
-                
-                
-                
-                
-                
-                
-                
-                            
-                            
-                        </div>
-                
-                    </div>	
-
-
-
-
-
-
-
-                </div>
-
-
-
-            </td>
-            <td id="righttable">
-                
-                <h3>Find Local Renewable Wood Products: Search the Directory</h3>
-				
-				<p>Buying Montana wood products benefits our forests and our communities. 
-				   You'll find 332 facilities listed here. Locate businesses that supply anything from bark to fuelwood, art to furniture, 
-				   boats to bows, picture frames to flooring, poles to log homes, lumber to engineered wood. 
-				   If you have trouble searching the directory, send this <a href="contact.html" Id="contactIndex">contact form.</a></p><br style="line-height:3px;"/>
-                   
-                   <div id="boxtitle">Ask For Montana Wood</div>				   
-		   	
-			       <p>Lots of Montanans use locally sourced wood products. They are homeowners, builders, landscapers, do-it-yourselfers, property managers, farmers and ranchers. 
-				   If your building supply store doesn't offer Montana wood, ask for it. When you ask for renewable wood products grown in Montana, you support the businesses 
-				   ensuring the health of our forests. Our forest products industry plays a vital role in reducing wildfire risk and managing our forests. Our environment and 
-				   our economy benefit from the sale of Montana wood products.</p><br style="line-height:3px;"/>
-				   
-			<div id="boxtitle">Buy Montana Wood</div>		
-
-					<p>Need lumber for your construction project, chips for the playground, bark for the landscape, posts for fencing or pellets for the stove? 
-					   Buy Montana-grown, Montana-made wood products. The Montana Wood Products Directory can help you connect with retail outlets in your area.
-					   Some of the state's small sawmill operations also provide retail or custom wood.</p><br style="line-height:3px;"/>
-					   
-		    <div id="boxtitle">Build With Montana Wood</div>		
-			
-					<p>Wood is the only renewable major building material. Wood is also one of the few building materials with third-party certification to prove it came from a 
-					   responsibly managed resource. Using local wood from sustainably managed forests makes a positive impact to our communities, economy and forests.</p> 
-				   
-				    <p>The design and construction industry has a lot of interest in the use of cross-laminated timber (CLT). Cross-laminated timber is produced in Montana. 
-					   CLT reduces the carbon footprint of construction and stores massive amounts of carbon as well. Find out how the cost savings of engineered wood panels
-					   can benefit your commercial or large-scale residential project. In addition to dimensional lumber, logs, and mass timber you can find siding, flooring,
-					   millwork and other materials for building and remodeling.</p><br style="line-height:3px;"/>
-		
-
-
-            </td>
-        </tr>
-    </tbody>
-</table>
-</div>
-<div id="footertop">
-    <div id="footertopdiv">
-    <p id="mwpd">MONTANA WOOD PRODUCTS DIRECTORY</p>
-    <p id="update">Is your business information missing or incomplete?</p>
-    <a href = "#"><p id="updatebutton" class="updatebuttonclass">Add or update your wood products business here.</p></a>
+    <div class="content-div">
+        <div class="content-main" ng-view >
+        </div>
     </div>
-
-
-</div>
-<div id="footerbottom">
-    <h2 id="connect"> CONNECT WITH US</h2><br style="line-height:2px;"/>
-
-    <a href = "https://facebook.com/MontanaDNRC"><div class="facebookdiv"></a></div>
-    <a href = "contact.html"><div style="margin-left:10px;margin-bottom:25px;" id="footerbuttons" class="footerbuttonsclass">Contact Form</div></a> 
-    <a href = "contact.html#sub"> <div style="margin-left:10px;" id="footerbuttons" class="footerbuttonsclass">Subscribe to Our Newsletter</div></a>  
-
-    <div id="smallfootertext">
-        <p  id="footertext">The Montana Wood Products Directory is a collaboration between the Montana Department of Natural Resources and Conservation, the Montana Manufacturers Information System maintained by the University of Montana, and the UM Bureau of Business and Economic Research.<br />
-        <br />
-        &copy;2020 Montana Department of Natural Resources and Conservation</p>
-      
-    </div>
-
-</div>
+    
+    <mtwp-footer></mtwp-footer>
 </body>
 </html>
-<!-- window.onclick = function(event) { -->
-  <!-- if (!event.target.matches('.dropbtn')) { -->
-    <!-- var dropdowns = document.getElementsByClassName("dropdown-content"); -->
-    <!-- var i; -->
-    <!-- for (i = 0; i < dropdowns.length; i++) { -->
-      <!-- var openDropdown = dropdowns[i]; -->
-      <!-- if (openDropdown.classList.contains('show')) { -->
-        <!-- openDropdown.classList.remove('show'); -->
-      <!-- } -->
-    <!-- } -->
-  <!-- } -->
-<!-- } -->
-
-	 
- <!-- </script>  -->

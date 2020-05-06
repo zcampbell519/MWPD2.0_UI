@@ -1,0 +1,54 @@
+<div class="lefttable">
+    <div class="logo2div">
+        <img src="images/mwlogo.png" alt="Montana Woods Logo" id="logoid2">
+    </div>
+    <div id="formdiv">
+        <div id="containerLeft">
+
+            <h3 class="search search-group">Search By Product</h3>
+
+            <div class="dropdown search-group" ng-repeat="product in SearchParams.Products">
+                <button 
+                    ng-click="product.SearchIsVisible=!product.SearchIsVisible" 
+                    class="dropbtn button " id="button">{{product.DisplayName}}
+                </button>
+                <div 
+                    ng-show="product.SearchIsVisible" 
+                    class="dropdown-content search-group">
+                    <ul class="list-group" style="list-style-type:none;">
+                        <li class="list-group-item" ng-repeat="item in product.Items track by $index">
+                            <input type="checkbox" ng-click="UpdateSelectedItems($event, item,product.SelectedItems)"/>{{item}}
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+            <h3  class="search-group advanced">Advanced</h3>
+                
+            <div class="dropdown search-group" ng-repeat="product in SearchParams.Advanced">
+                <button ng-click="product.SearchIsVisible=!product.SearchIsVisible" class="dropbtn button">{{product.DisplayName}}</button>
+                <div ng-show="product.SearchIsVisible" class="dropdown-content">
+                    <ul class="list-group" style="list-style-type:none;">
+                        <li class="list-group-item" ng-repeat="item in product.Items track by $index">
+                            <input type="checkbox" ng-click="UpdateSelectedItems($event, item,product.SelectedItems)"/>{{item}}
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+            
+            <h3 class="search-group or">Or Search By Company Name</h3>
+            <div class="search-group">
+                <input type="text" id="ctext" name="text_company" ng-model="SearchParams.Facilities.SearchString"
+                        placeholder="Type Company Name">
+            </div>
+            
+            <div class="search-group center-content">
+                <input id="SubmitBtn" class="form-control-button" type="submit" value="Submit" ng-click="Submit()">
+                <input id="ClearBtn" class="form-control-button" type="submit" value="Clear All" ng-click="Clear()">
+                <input id="PrintBtn" class="form-control-button" type="submit" value="Print Results">
+            </div>
+        </div>
+    </div>
+</div>
