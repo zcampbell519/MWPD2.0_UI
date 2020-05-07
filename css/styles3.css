@@ -1,49 +1,32 @@
 @charset "UTF-8";
 /* CSS Document */
 
-.list-group{
+.list-group, .list-group2, .list-group3, .list-group4, .list-group5, .list-group6, .list-group7 {
     margin-left:-20px;
 }
-.slider-button{
-    color:white;
-    font-size: 48px;
-}
-.slide{
-    text-align: center;
-
-}
-.backtobutton{
-    width:100%;
-}
-	
+		
 #containerLeft{
-    width:83%;
+  width:83%;
+
     margin-left: 4%;
     background-color: #e9e4d1;
     border-radius:25px;
     border: 4px solid #4c8a44;	
     background-color:#21352c;
     padding: 2%;
+ 
 }
 
-.search  {
+#search  {
+
    color: #f2cb8a;
    font-size:20px;
    font-weight:500;
    text-align: center;
 }
 
-.search-group{
-    margin-bottom: 18px;
-
-}
-
-.content-text-group{
-    padding-bottom: 15px;
-}
-
 .dropdown-content {
-    display: block;
+    display: none;
     background-color: #e9e4d1;
     min-width: 10em;
     box-shadow: 0px .5em 1em 0px rgba(0,0,0,0.2);
@@ -58,35 +41,31 @@
     margin-top:-10px;
     position: relative;
     z-index:1;
-}
+ 
+  }
       
-.dropbtn:hover, 
-.dropbtn:focus {
+      .dropbtn:hover, .dropbtn:focus {
     background-color: #4c8a44;
     color:#e9e4d1;
-}
+  }
   
-.dropdown{
+  .dropdown,.dropdown2,.dropdown3,.dropdown4,.dropdown5,.dropdown6,.dropdown7 {
     position: relative;
     display: inline-block;
     background-color:#21352c;
     width:100%;
-}
+  }
   
-  
-.dropdown-content a {
+  .dropdown-content a {
     color: #21352c;
     background-color:e9e4d1;
     padding: 3.75em 1em;
     text-decoration: none;
     display: block;
-}
+  }
+  .dropdown-content a:hover {background-color: #4c8a44}
 
-.dropdown-content a:hover {
-    background-color: #4c8a44
-}
-
-.dropbtn {
+  .dropbtn {
 	background-color: #e9e4d1;
 	color: #21352c;
 	padding: 1em;
@@ -97,7 +76,7 @@
 	cursor: pointer;
 }
 
-.button {
+#button {
 	width:100%;
 	text-align:center;
 	display:block;
@@ -107,56 +86,145 @@
     position: relative;;
     z-index:2;
 	
-}
-
-.advanced  {
-    color: #f2cb8a;
-	font-size:20px;
-    font-weight:500;
-    text-align: center;
-}
+	}
+	
+	#button2 {
+        width:100%;
+        text-align:center;
+        display:block;
+        border-radius: 10px;
+        font-size:12px;
+        font-weight: bold;
+        position: relative;;
+        z-index:2;
+	
+	}
+	
+	#button3 {
+        width:100%;
+        text-align:center;
+        display:block;
+        border-radius: 10px;
+        font-size:12px;
+        font-weight: bold;
+        position: relative;;
+        z-index:2;
+	
+	}
+	
+	#button4 {
+        width:100%;
+        text-align:center;
+        display:block;
+        border-radius: 10px;
+        font-size:12px;
+        font-weight: bold;
+        position: relative;;
+        z-index:2;
+	
+	}
+	
+	#button5 {
+        width:100%;
+        text-align:center;
+        display:block;
+        border-radius: 10px;
+        font-size:12px;
+        font-weight: bold;
+        position: relative;;
+        z-index:2;
+	
+	}
+	
+	#button6 {
+        width:100%;
+        text-align:center;
+        display:block;
+        border-radius: 10px;
+        font-size:12px;
+        font-weight: bold;
+        position: relative;;
+        z-index:2;
+	
+	}
+	
+	#button7 {
+        width:100%;
+        text-align:center;
+        display:block;
+        border-radius: 10px;
+        font-size:12px;
+        font-weight: bold;
+        position: relative;;
+        z-index:2;
+	
+    }
     
-.or  {
-    color: #f2cb8a;
-	font-size:20px;
-	font-weight:500;
-	top: 0vh;
-    padding-bottom:20px;
-    text-align: center;
-    
-}
-    
-#ctext  {
-    border-radius: 10px;	
-    font-size:12px;
-    height:2.5vw;
-    padding-right:3px;
-    font-weight: bold;
-    color: #21352c;
-    width: 97.0%;
-    background-color: #e9e4d1;
-    font-family: Montserrat, sans-serif;
-}
+    .dropdown,.dropdown2,.dropdown3,.dropdown4,.dropdown5,.dropdown6,.dropdown7 {
+  
+        display: inline-block;
+        background-color:#21352c;
+        width:100%;
+      }
 
+      #advanced  {
 
-.form-control-button {
-    border-radius: 10px;	
-    font-size:12px;
-    background-color: #e9e4d1;
-    margin-right: 3px;
-}
+	   color: #f2cb8a;
+	   font-size:20px;
+       font-weight:500;
+   text-align: center;
+	   
+    }
+    
+    #or  {
+
+	   color: #f2cb8a;
+	   font-size:20px;
+	   font-weight:500;
+	   top: 0vh;
+       padding-bottom:20px;
+       text-align: center;
+    }
+    
+    #ctext  {
+        border-radius: 10px;	
+         font-size:12px;
+         height:2.5vw;
+         padding-right:3px;
+         font-weight: bold;
+         color: #21352c;
+         width: 97.0%;
+         background-color: #e9e4d1;
+         font-family: Montserrat, sans-serif;
+     }
+     #submitx {
+          border-radius: 10px;	
+         font-size:12px;
+         background-color: #e9e4d1;
+     }
      
-#buttonhover:hover {
-    background-color:#f7c242 !important;
-    color:#247443 !important;
-}
+     #submitx2 {
+          border-radius: 10px;	
+          font-size:12px;
+         background-color: #e9e4d1;
+     }
+     
+     #submitx3 {
+          border-radius: 10px;	
+          font-size:12px;
+         background-color: #e9e4d1;
+     }
 
-#buttonhover {
-    font-size:20px;
-    font-family:'Montserrat', helvetica, san-serif;
-    line-height:25px;
-}
-.show {display:block;}
+     #buttonhover:hover {
+        background-color:#f7c242 !important;
+        color:#247443 !important;
+        }
+        #buttonhover {
+        font-size:20px;
+        font-family:'Montserrat', helvetica, san-serif;
+        line-height:25px;
+        }
+        .show {display:block;}
 
 /* BREAK */
 
@@ -166,18 +234,19 @@
     background-color:  #21352c;
     position: relative;
     font-family:'Montserrat', helvetica, san-serif;
-}
+  }
   
-  /* this and the class for .topnav are the same? */
-
+  .topnav #myLinks {
+    display: none;
+  }
   
-.topnav a {
+  .topnav a {
     color: #e9e4d1;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
     display: block;
-}
+  }
   
   .topnav a.icon {
     background: #4c8a44;
@@ -187,7 +256,7 @@
     top: 0;
     color:#21352c;
   }
-
+  
   .topnav a:hover {
     background-color:#e9e4d1;
     color: #21352c;
@@ -201,7 +270,7 @@
     color: #21352c !important;
   }
 
-.headerdiv {
+#headerdiv {
     width:100%;
     height:156px;
     background-image: url("../images/navbg.jpg");
@@ -219,7 +288,7 @@ a {
 	color:#763813;
 	}
 
-.lefttable {
+#lefttable {
     width:30%;
     display: inline-block;
     border: 0px;
@@ -229,7 +298,7 @@ a {
     margin-bottom:5%;
 }
 
-.righttable {
+#righttable {
     width:61%;
     display: inline-block;
     background-color:#e9e4d1;
@@ -245,7 +314,7 @@ a {
     
 }
 
-.content-main-nosearch {
+#righttable2 {
     width:80%;
     display: inline-block;
     background-color:#e9e4d1;
@@ -277,7 +346,7 @@ h6 {
     font-weight: 400;
 }
 
-.boxtitle {
+#boxtitle {
     font-size:20px;
     font-family:'Montserrat', helvetica, san-serif;
     font-weight:600;
@@ -292,61 +361,49 @@ h6 {
     margin-top:0px;
     }
 
-.content-main {
+#contenttable {
     width:100%;
-    border: 0px;
+border: 0px;
     padding: 0px;
     border-spacing:0px !important;
 }
 
-.center-content{
-    display: flex;
-    min-width: -webkit-fill-available;
-    justify-content: center;
-}
-
-.center-content>.download-button{
-    padding-right: 20px;
-}
-
-.content-div {
+#contentdiv {
     width:100%;
     background-color: rgb(208, 226, 43);
     background-image: url("../images/bodybg.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-color:#f2cb8a;
+background-repeat: no-repeat;
+background-size: 100%;
+background-color:#f2cb8a;
 }
 
-.directory {
+#footertop {
     
     height:200px;
     background-image: url("../images/topfooter.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
-    text-align: center;
-    padding-top:30px;
 }
 
 
-.mwpd {
+#mwpd {
 	font-size:30px;
     font-weight:700;
     font-family: 'Montserrat', sans-serif;
     color:#21352c;
     margin:0;
   	
-}
+	}
 	
-.update {
+	#update {
 	font-size:24px;
     font-weight:700;
     font-family: 'Montserrat', sans-serif;
     color:#21352c;
     margin-top:0px;
-}
+    }
     
-.updatebutton {
+#updatebutton {
     font-size:24px;
     font-family:'Montserrat', helvetica, san-serif;
     font-weight:600;
@@ -367,15 +424,18 @@ background-color:#e9e4d1 !important;
 color:#21352c !important;
 }
 
-.footerbutton:hover {
+.footerbuttonsclass:hover {
     color:#f2cb8a !important;
     background-color:#21352c !important;
 }
 
+#footertopdiv {
+text-align: center;
+padding-top:30px;
+}
 
 
-
-.footer {
+#footerbottom {
     background-color:#21352c;
     height:200px;
     text-align: center;
@@ -432,7 +492,7 @@ color:#21352c !important;
 }
 
 
-.connect{
+#connect{
 	
 	position:relative;
 	color:#f2cb8a;
@@ -445,12 +505,13 @@ color:#21352c !important;
 }
 
 
-.footertext {
+#footertext {
 	font-size: 14px;
 	font-weight: 400;
 	color:#eed79c;
+    padding-top:25px;
     font-family:'Montserrat', helvetica, san-serif;
-    max-width: 700px;
+    margin-bottom:30px;
     
 	
 }
@@ -463,7 +524,7 @@ color:#21352c !important;
     margin-top:-25px;
 }
 
-.footerbutton {
+#footerbuttons {
     font-size:20px;
     font-family:'Montserrat', helvetica, san-serif;
     font-weight:600;
@@ -512,25 +573,22 @@ a.active {
     margin-bottom:4%;
 }
 
-.logoid {
+#logoid {
     margin-top:16px;
     margin-left:4%;
-    width:10%;
+   
 }
 
-.logo2div {
+#logo2div {
     margin:0 auto;
     text-align: center;
     margin-bottom:35px;
     display:none;
 }
 
-/* Why have this display none Z. Campbell*/
 .topnav {
     display:none;
 }
-
-
 #back {
 	position:relative;
 	Top: -23vw;
@@ -554,14 +612,14 @@ a.active {
 	position:relative;
 		
 	}
-.addupdate  {
+#addupdate  {
 	position: relative;
 	width: 45vw;
 	height:auto;
 	left:16vw;
 		
 	}
-.readmore{
+#readmore{
 	color:#c9a034;
 	
 }
@@ -570,14 +628,14 @@ a.active {
 	margin-left: 10vw;
 	margin-right: 10vw;	
 	}
-.dnrc  {
+#dnrc  {
 	position: relative;
 	left: 1vw;
 	width: 11vw;
 	height:auto;
 	margin-right: 1vw;		
 	}
-.mmis {
+#mmis {
 	position: relative;
 	left: 6vw;
 	top: -5.25vh;
@@ -585,7 +643,7 @@ a.active {
 	height:auto;
 	margin-right: 1vw;		
 	}
-.bber {
+#bber {
 	position: relative;
 	left: 13vw;
 	top: -6.5vh;
@@ -593,9 +651,9 @@ a.active {
 	height: auto;
 	margin-right: 1vw;		
 	}
-.mim  {
+#mim  {
 	position: relative;
-	left:20vw;
+	left:19vw;
 	width: 11vw;
 	height:auto;
 	margin-right: 1vw;		
@@ -603,23 +661,24 @@ a.active {
 #buymtwood  {
 	position: relative;
 	left:3vw;
-	top:1vh;
+	top:-.25vh;
 	font-size: 1vw;
 	font-weight: 600;
 	}
-#mmisemail {
+#www {
 	position: relative;
-	left:11.62vw;
-	top:-4.5vh;
+	left:9.50vw;
+	top:-6.5vh;
 	font-size: 1vw;
 	font-weight: 600;
 	}
-	#bber2 {
+#xxx {
 	position: relative;
-	left:24vw;
-	top:-5.5vh;
+	left:20vw;
+	top:-7.5vh;
 	font-size: 1vw;
 	font-weight: 600;
+	line-height:1vw;
 	}
 #madeinmt {
 	position: relative;
@@ -632,211 +691,332 @@ a.active {
 #renewable {
 	position: relative;
 	left:-28vw;
-	top: 3.5vh;
+	top: 1.50vh;
     font-size: 1vw;
 	font-weight: 600;		
 	}
 #madeinmt2 {
 	position: relative;
 	top:3.5vh;
-	left:15.5vw;
+	left:15.25vw;
 	font-size: 1vw;
 	font-weight: 600;	
 	}
-.backtobutton{
+#backtobutton{
 	position:relative;
-	width: 35vw;
+	width: 33vw;
 	height:auto;	
 }
-.madeinbutton{
+#madeinbutton{
 	position:relative;
-	width: 25vw;
+	width: 28vw;
 	height:auto;	
 }
-
-.DNRClgo{
-    position:relative;
-    top:-1vw;
-    width: 12vw;
-    height:auto;
-    left:60vw;
+#DNRClgo{
+	
+position:relative;
+top:5.0vw;
+width: 12vw;
+height:auto;
+left:52vw;
 }
-
-.contactWIG{
+#contactWIG{
 	
 	position:relative;
-	top: 1vw;
-	left: 50vw;
+	top: 7vw;
+	left: 41vw;
 	color:#763813;
 	font-size: 1.25vw;  
 }
-.contactWIG2{
+#contactWIG2{
 	
 	position:relative;
-	top: 3vw;
-	left: 38vw;
+	top: 9vw;
+	left: 30vw;
 	color:#763813;
 	font-size: 1.25vw;  
 }
-.fname{
+#fname{
 	position:relative;
-	top:-12vw;	
+	top:-14.0vh;	
 	left: 0vw;
 	width: 25vw;	
 	height:auto;
-	font-size: 1.8vw;
+	font-size: 3vh;
 }
-.fnameText{
+#fnameText{
 
 	position:relative;
-	top:-12vw;	
+	top:-14.0vh;	
 	left: 0%;
-	font-size: 1.25vw;	
+	font-size: 1.75vh;	
 }
-.lname{
+#lname{
 	position:relative;
-	top: -11vw;	
+	top: -13.0vh;	
 	left:0%;
 	width:25vw;
 	height:auto;	
-	font-size: 1.8vw;
+	font-size: 3vh;
 }
-.lnameText{
+#lnameText{
 	position:relative;
-	top:-11vw;	
+	top:-13.0vh;	
 	left: 0%;
-	font-size: 1.25vw;	
+	font-size: 1.75vh;	
 }
-.email{
+#email{
 	position:relative;
-	top:-10vw;	
+	top:-12.0vh;	
 	left:0%;
 	width:25vw;	
 	height:auto;	
-	font-size: 1.8vw;
+	font-size: 3vh;
 }
-.emailText{
+#emailText{
 	position:relative;
-	top:-10vw;		
+	top:-12.0vh;		
 	left:0%;
-	font-size: 1.25vw;
+	font-size: 1.75vh;
 }
-.company{
+#company{
 	position:relative;
-	top:-9vw;	
+	top:-11.0vh;	
 	left:0%;
 	width:25vw;	
 	height:auto;	
-	font-size: 1.8vw;
+	font-size: 3vh;
 }
-.companyText{
+#companyText{
 	position:relative;	
-	top:-9vw;
+	top:-11.0vh;
 	left:0%;
-	font-size:1.25vw;	
+	font-size:1.75vh;	
 }
-.subject{
+#subject{
 	position:relative;
-	top:-8vw;	
+	top:-10.0vh;	
 	left: 0%;
 	width:35vw;	
 	height:auto;	
-	font-size: 1.8vw;
+	font-size: 3vh;
 }
-.subjectText{
+#subjectText{
 	position:relative;
-	top:-8vw;	
+	top:-10.0vh;	
 	left:0%;
-	font-size: 1.25vw;	
+	font-size: 1.75vh;	
 }
-.message{
-    position:relative;	
-    width:75vw;	
-    height:20vw;
-    top:-7vw;
-    font-size: 1.8vw;
+#message{
+position:relative;	
+width:75vw;	
+height:20vw;
+top:-9.0vh;
+font-size: 3vh;
 }
-.messageText{
+#messageText{
 	position:relative;
-	top:-7vw;	
+	top:-9.0vh;	
 	left:0;
-	font-size: 1.25vw;
+	font-size: 1.75vh;
 }
-.submitcontact{	
+#submitcontact{	
 	position:relative;
-	top:-7vw;
+	top:-8.0vh;
+	left:0%;
+	width: 7.50vw;
+	height:auto;
+	}
+#captcha{	
+	position:relative;
+	top:-7.0vh;
 	left:0%;
 	width: 10.50vw;
 	height:auto;
 	}
-.mmis2{
+#submitcapt{	
+	position:relative;
+	top:-6.0vh;
+	left:0%;
+	width: 10.50vw;
+	height:auto;
+	}
+#linebreak {
+	position:relative;
+	top:-20vh;
+}
+#mmis2{
 	position:relative;
 	top:0vw;
 	left:18vw;
 	width: 12.5vw;
 	height: auto;
 }
-.bber2{ 
+#bberlogo{ 
     position:relative;
-	top:-.75vw;
-	left:32vw;
+	top:-1vw;
+	left:30vw;
 	width: 14.5vw;
 	height: auto;
 	background-color:clear;
 }
-.mmisemail {	                    
-position: relative;
-top:-1vw;
-left:18vw;
-font-weight:550;
+#xxx{ 
+    position:relative;
+	top:-3vw;
+	left:23.5vw;
+	width: 14.5vw;
+	height: auto;
+	background-color:clear;
 }
-.mmisemail2 {	                    
+#www {	                    
 position: relative;
-top:-3.5vw;
-left:41vw;
+top:-4.5vh;
+left:11.5vw;
+/* font-weight:550; */
+}
+#mmisemail1 {	                    
+position: relative;
+top:-4.5vh;
+left:45vw;
 font-weight:550;
 font-size: 1vw;
 }
-.subscribe{	
+#mmisemail2 {	                    
+position: relative;
+top:-7vh;
+left:15vw;
+font-weight:550;
+font-size: 1vw;
+}
+#subscribe{	
 	position:relative;
 	left: 22vw;
 	top:1vw;
 	font-size: 1.52vw;	
 }
-.subscribe2{	
+#subscribe2{	
 	position:relative;
-	left: 20vw;
+	left: 19vw;
 	top:2vw;
-	width:9vw;
+	width:9.50vw;
 	height: auto;
 	font-size: 1.52vw;	
 }
-.emailSubscribe{
+#emailSubscribe{
 		position:relative;
 		top:1vw;
-		left: 20vw;
+		left: 18vw;
 		width: 35vw;
 		height:2.5vw;
 		font-size: 1.25vw;	
 	}
-.facebook {
+#facebook {
 	position: relative;
 	top:1vw;
 	left:35vw;
 	width: 4.25vw;
 	height:auto;
 }
-
-.boxtitle>a,
-.boxtitle>a:visited {
-    color:#f2cb8a;
-    text-decoration: none !important;
+#terms {
+	width:13vw;
+	height:auto;
+}
+#privacy{
+	width:13.50vw;
+	height:auto;
+}
+#backtobutton1 {
+	position:relative;
+	width: 35vw;
+	height:auto;
 }
 
-.center-content{
-    display: flex;
-    align-items: center;
+/*-------------------Start Dropdown CSS----------------------------------------------*/
+.dropdownBW {
+	float:right;
+	/* overflow:hidden; */
+	/* min-width: 8.5vw; */
 }
+
+
+.dropdownBW .dropbtn {
+	position:relative;
+	border: none;
+	outline:none;                                                    
+	color:black;
+	background-color: inherit;
+	font-family: inherit;
+	margin:0;
+	top:0vw;	
+}
+
+.dropdownBW-content {
+	display: none;
+	position: relative;
+	background-color: #4c8a44;
+	z-index: 1;	
+
+}
+
+.dropdownBW-content a {
+	position: relative;
+	float: none;
+	color: #21352c;
+	text-decoration:none;
+	display: block;
+	text-align: center;
+	font-size:	.75vw;
+	line-height: 2vw;
+	width: 12vw;
+}
+
+.dropdownBW-content a:hover {
+	background-color:#c9a034;
+	position: relative;
+	font-size:	.75vw;     /*-- gold hover text and position */
+	width:14vw;
+	height:auto;
+	left:-1vw;
+}
+
+.dropdownBW:hover .dropdownBW-content {
+	position:fixed;
+	left:68.51vw;
+	top:7.2vw;                         /*--change green box size ect --*/
+	display: block;
+	width: 14vw;
+	
+}
+/* #index  {
+	position:relative;
+	left: -20vw;
+	font-size:inherit;
+} */
+/* #ask  {
+	position:relative;
+	left: -20.25vw;
+	font-size:inherit;
+} */
+/* #why  {
+	position:relative;
+	left: -20vw;
+	font-size:inherit;
+} */
+#build  {
+	position:relative;
+	/* left: 28vw; */
+	font-size:inherit;
+	font-weight:inherit;
+}
+/* #about  {
+	position:relative;
+	left: 26.75vw;
+	font-size:inherit;
+	
+} */
+
+
+/*-------------------End Dropdown CSS----------------------------------------------*/
 
 
 
@@ -854,6 +1034,8 @@ font-size: 1vw;
         margin-right:15px;
         text-decoration:none
     }
+
+
 }
 
 @media only screen and (max-width: 1163px) {
@@ -870,6 +1052,7 @@ font-size: 1vw;
         margin-right:15px;
         text-decoration:none
     }
+
 }
 
 @media only screen and (max-width: 978px) {
@@ -886,6 +1069,7 @@ font-size: 1vw;
         margin-right:15px;
         text-decoration:none
     }
+
 }
 
 @media only screen and (max-width: 891px) {
@@ -951,28 +1135,28 @@ font-size: 1vw;
         margin-bottom:0;
     
     }
-    .headerdiv {
+    #headerdiv {
         display:none;
     }
 
-    .mwpd {
+    #mwpd {
         font-size:21px;
         font-weight:700;
         font-family: 'Montserrat', sans-serif;
         color:#21352c;
         margin:0;
           
-    }
+        }
         
-    .update {
+        #update {
         font-size:17px;
         font-weight:700;
         font-family: 'Montserrat', sans-serif;
         color:#21352c;
         margin-top:0px;
-    }
+        }
         
-    .updatebutton {
+    #updatebutton {
         font-size:17px;
         font-family:'Montserrat', helvetica, san-serif;
         font-weight:600;
@@ -985,8 +1169,8 @@ font-size: 1vw;
         color:#f2cb8a;
         margin-bottom:0px;
         margin-top:0px;
+    
     }
-
     #footertop {
     
         height:235px;
@@ -996,7 +1180,7 @@ font-size: 1vw;
 
     }
 
-    .footersubtext {
+    #smallfootertext {
         width:85%;
         max-width:700px;
         text-align: center;
@@ -1008,8 +1192,8 @@ font-size: 1vw;
         display:block;
     }
 
-    .logo2div {
-        display:block;
+    #logo2div {
+    display:block;
     }
     
 }
@@ -1019,22 +1203,25 @@ font-size: 1vw;
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
-    .lefttable {
+    #lefttable {
         width:100%;
         display: block;
+
         border: 0px;
         padding: 0px;
+
         padding-top:4%;
         margin-top:0;
     }
     
-    .righttable {
+    #righttable {
         width:92%;
         display: block;
         border: 0px;
         margin:0;
         padding:4%;
         margin-bottom:0px;
+  
     }
 
     nav {
@@ -1045,7 +1232,6 @@ font-size: 1vw;
         font-size:10px;
         line-height:156px;
     }
-   
     nav a {
         margin-left:15px;
     margin-right:15px;
@@ -1060,28 +1246,27 @@ font-size: 1vw;
         margin-top:0;
         margin-bottom:0;
     }
-    
-    .headerdiv {
+    #headerdiv {
         display:none;
     }
-    
-    .mwpd {
+    #mwpd {
         font-size:21px;
         font-weight:700;
         font-family: 'Montserrat', sans-serif;
         color:#21352c;
         margin:0;
-    }
+          
+        }
         
-    .update {
+        #update {
         font-size:17px;
         font-weight:700;
         font-family: 'Montserrat', sans-serif;
         color:#21352c;
         margin-top:0px;
-    }
-            
-    .updatebutton {
+        }
+        
+    #updatebutton {
         font-size:17px;
         font-family:'Montserrat', helvetica, san-serif;
         font-weight:600;
@@ -1094,9 +1279,8 @@ font-size: 1vw;
         color:#f2cb8a;
         margin-bottom:0px;
         margin-top:0px;
-
-    }
     
+    }
     #footertop {
     
         height:235px;
@@ -1104,8 +1288,7 @@ font-size: 1vw;
         background-repeat: no-repeat;
         background-size: cover;
     }
-    
-    .footersubtext {
+    #smallfootertext {
         width:85%;
         max-width:700px;
         text-align: center;
@@ -1116,8 +1299,8 @@ font-size: 1vw;
     .topnav {
         display: block;
     }
-    
-    .logo2div {
+    #logo2div {
         display:block;
-    }
+        }
+
 }

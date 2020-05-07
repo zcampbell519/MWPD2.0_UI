@@ -1,102 +1,169 @@
-<div class="content-main-nosearch">
+<!doctype html>
+<html lang="en">
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Untitled Document</title>
+<link rel="stylesheet" href="./css/styles3.css" type="text/css">
+<script  src = "js/index.js"></script> 
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body>
+
+    <div class="topnav">
+        <a href="javascript:void(0);" class="activate" onclick="myFunction8()">MENU</a>
+        <div id="myLinks">
+            <a href="index.html">HOME</a>
+            <a href="ask.html">ASK FOR</a> 
+            <a href="why.html">WHY BUY</a> 
+            <a href="build.html">BUILD WITH</a>
+            <a href="about.html">ABOUT</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction8()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+
+<div id="headerdiv" >
+        <img id="logoid" src="images/mwlogo.png">
+    <nav>
+        <a href="index.html">HOME</a> 
+        <a href="ask.html">ASK FOR</a> 
+        <a href="why.html">WHY BUY</a> 
+        <a href="build.html">BUILD WITH</a>
+        <a href="about.html">ABOUT</a>
+      </nav>  
+</div>
+<div  id="contentdiv">
+    
+<table id="contenttable">
+    <tbody>
+        <tr>
+            <td id="lefttable">
+                <div id="logo2div"><img id="logoid2" src="images/mwlogo.png"></div>                
+                <div id="formdiv"></div>	
+            </td>
+    <td id="righttable2">
     <h1>Contact Us</h1>
-    <img src="logos/DNRC.jpg" class="DNRClgo" alt="DNRC logo">
-    <a href=https://madeinmontanausa.com/Products/LocalWoodisGood class="contactWIG">Wood products</a>
-    <a href=http://dnrc.mt.gov/divisions/forestry/forestry-assistance/biomass class="contactWIG2">Renewable Wood Energy</a>
-
-    <form method="POST" action="contact.html"><br style="line-height:3px;" />
-        <div class="row">
-            <label for="fname" class="fnameText">First Name: </label>
-        </div>
-        <input type="text" class="form-control" class="fname" name="firstname"><br style="line-height:3px;" />
-
-        <div class="row">
-            <label for="lname" class="lnameText">Last Name:</label>
-        </div>
-        <input type="text" class="form-control" class="lname" name="lastname"><br style="line-height:3px;" />
-
-        <div class="row">
-            <label for="email" class="emailText">Email: </label>
-        </div>
-        <input type="text" class="form-control" class="email" name="email"><br style="line-height:3px;" />
-
-        <div class="row">
-            <label for="company" class="companyText">Company/Organization: </label>
-        </div>
-        <input type="text" class="form-control" class="company" name="company"><br style="line-height:3px;" />
-
-        <div class="row">
-            <label for="subject" class="subjectText"> Subject: </label>
-        </div>
-        <input type="text" class="form-control" class="subject" name="subject"><br style="line-height:3px;" />
-
-        <div class="row">
-            <label for="message" class="messageText">Message: </label>
-        </div>
-        <textarea class="message" name="message"></textarea><br style="line-height:3px;" />
-        <br style="line-height:3px;" />
-
-        <div class="row">
-            <img src="buttons/submit.png" class="submitcontact" alt="Submit Contact Info">
-        </div>
-
-    </form>
-    <hr>
-
-    <h1>Support</h1>
-    <p>The Montana Wood Products Directory would not be possible without the Montana Manufacturers Information System
-        database maintained by the University of Montana and the expertise of the Bureau of Business and Economic
-        Research.</p>
-    <p>Forest industry research from UM can be accessed at the links below: <a
-            href="http://www.bber.umt.edu/FIR/default.asp">http://www.bber.umt.edu/FIR/Default.asp</a></p><br
-        style="line-height:3px;" />
-
-    <div>
-        <img src="logos/mmis.jpg" class="mmis2" alt="Montana Manufacturing Information System">
-        <img src="logos/BBERnewsmall.png" class="bber2" alt="Bureau of Business and Economic Research">
+	<img src="logos/DNRC.jpg" id="DNRClgo" alt="DNRC logo" >
+	<a href=https://madeinmontanausa.com/Products/LocalWoodisGood id="contactWIG">Wood products</a>
+	<a href=http://dnrc.mt.gov/divisions/forestry/forestry-assistance/biomass id="contactWIG2">Renewable Wood Energy</a>
+	
+	<form method="POST" action="contact.html"><br style="line-height:3px;"/>
+    <div class="row">
+    <label for="fname" id="fnameText">First Name: </label>
+	</div>
+	<input type="text" class="form-control" id="fname" name="firstname"><br style="line-height:3px;"/>
+	
+    <div class="row">
+    <label for="lname" id="lnameText">Last Name:</label>
     </div>
-    <p><a href="mailto:MMIS@business.umt.edu" class="mmisemail"> MMIS@business.umt.edu</a></p>
-    <p><a href="http://www.bber.umt.edu" class="mmisemail2">Bureau of Business and Economic Research</a></p>
-
-    <p>The Montana Wood newsletter provides important updates. We'll share links to information and examples about
-        Montana wood projects.
-        Help us promote Montana's renewable wood products and protect Montana forests and communities.
-        Sign up here with the knowledge that your email address will never be shared with anyone.</p>
-    <h1 class="subscribe">Subscribe to the Montana Wood E-newsletter</h1>
-    <input name="email" class="emailSubscribe" type="email" placeholder="Email Address" />
-    <a href="/#/index"><img src="buttons/subscribe.png" class="subscribe2" alt="Subscribe to E-Newsletter"></a><br
-        style="line-height:3px;" />
-    <h1>Join Us</h1>
-    <p>Many stakeholders are working together to make Montana's forests thrive. Join a network of forest industry
-        leaders, building and construction groups,
-        nonprofit associations, government agencies and environmental experts. Together we will ensure this important
-        renewable resource is enjoyed now and in the future.</p>
-    <h1>Good for You, Good for Montana</h1>
-    <p>Buying products from Montana's forests has a powerful effect. It strengthens and sustains things that matter,
-        including our forests. In our state, the wood product industry also benefits:</p>
-
-    <ul>
-        <li>Montana's Economy</li>
-        <li>Recreation</li>
-        <li>Tourism</li>
-        <li>Water Quality</li>
-        <li>Carbon Storage</li>
-        <li>Wildfire Reduction</li>
-        <li>Hunting and Fishing</li>
-        <li>Rural Communities</li>
-    </ul>
-
-    <h1>Connect, Follow, Share</h1>
-    <p>In addition to subscribing to the newsletter, please connect and share with us on Facebook, Pinterest and
-        Twitter.
-        Feel free to use the campaign materials to inform your friends, employees and customers.
-        Contact us to share your ideas and comments. We welcome news and photos about your Montana wood projects.</p>
-
-    <div>
-        <a href="https://facebook.com/Buy-Montana-Wood-105373007779273/"><img src="images/facebookdark.png"
-                class="facebook" alt="Facebook Icon"></a>
-
+    <input type="text" class="form-control" id="lname" name="lastname"><br style="line-height:3px;"/>
+	
+	<div class="row">
+    <label for="email" id="emailText">Email: </label>
     </div>
+    <input type = "text" class="form-control" id="email" name="email"><br style="line-height:3px;"/>
+	
+	 <div class="row">
+    <label for="company" id="companyText">Company/Organization: </label>
+    </div>
+    <input type = "text" class="form-control" id="company" name="company"><br style="line-height:3px;"/>
+	
+	<div class="row">
+    <label for="subject" id="subjectText"> Subject: </label>
+    </div>
+    <input type = "text" class="form-control" id="subject" name="subject"><br style="line-height:3px;"/>
+		
+	<div class="row"> 
+    <label for="message" id="messageText">Message: </label>
+    </div>
+    <textarea id="message" name="message"></textarea><br style="line-height:3px;"/>
+    <br style="line-height:3px;"/>
+	
+	 <div class="row">
+	<img src="buttons/submit.png" id="submitcontact" alt="Submit Contact Info">
+    </div>
+		 
+	</form>	
+<form action="?" method="POST">
+      <div class="g-recaptcha" id="captcha" data-sitekey="6LcjqeEUAAAAAKMT3w1TT7U_9Al03tsb1XX7g2oI"></div>
+      <br/>
+      <input type="submit" id="submitcapt"value="Submit">
+    </form>	
 
+	<hr>	   
+	<h1>Support</h1>	   
+	<p>The Montana Wood Products Directory would not be possible without the Montana Manufacturers Information System
+	database maintained by the University of Montana and the expertise of the Bureau of Business and Economic Research.</p> 		
+    <p>Forest industry research from UM can be accessed at the links below: <a href="http://www.bber.umt.edu/FIR/default.asp">http://www.bber.umt.edu/FIR/Default.asp</a></p><br style="line-height:3px;"/>     
+			
+	<div>
+	<img src="logos/mmis.jpg" id="mmis2" alt="Montana Manufacturing Information System">  
+	<img src ="logos/BBERnewsmall.png" id="bberlogo" alt="Bureau of Business and Economic Research">
+	</div>		
+	<p><a href="mailto:MMIS@business.umt.edu" id="mmisemail1"> MMIS@business.umt.edu</a></p>
+	<p><a href="http://www.bber.umt.edu" id="mmisemail2">Bureau of Business and Economic Research</a></p>
+				
+	<p>The Montana Wood newsletter provides important updates. We'll share links to information and examples about Montana wood projects. 
+	   Help us promote Montana's renewable wood products and protect Montana forests and communities.
+	   Sign up here with the knowledge that your email address will never be shared with anyone.</p>			
+	<h1 id="subscribe">Subscribe to the Montana Wood E-newsletter</h1>			
+	<input name="email" id="emailSubscribe" type="email" placeholder="Email Address" />	
+	<a href ="index.html"><img src="buttons/subscribe.png" id="subscribe2" alt="Subscribe to E-Newsletter"></a><br style="line-height:3px;"/>
+	<h1>Join Us</h1>
+	<p>Many stakeholders are working together to make Montana's forests thrive. Join a network of forest industry leaders, building and construction groups,
+	   nonprofit associations, government agencies and environmental experts. Together we will ensure this important renewable resource is enjoyed now and in the future.</p>
+	<h1>Good for You, Good for Montana</h1>
+	<p>Buying products from Montana's forests has a powerful effect. It strengthens and sustains things that matter, 
+       including our forests. In our state, the wood product industry also benefits:</p>
+	
+	<ul>
+	<li>Montana's Economy</li>
+	<li>Recreation</li>
+	<li>Tourism</li>
+	<li>Water Quality</li>
+	<li>Carbon Storage</li>
+	<li>Wildfire Reduction</li>
+    <li>Hunting and Fishing</li>
+	<li>Rural Communities</li>
+	</ul>	
+
+	<h1>Connect, Follow, Share</h1>
+	<p>In addition to subscribing to the newsletter, please connect and share with us on Facebook, Pinterest and Twitter. 
+	   Feel free to use the campaign materials to inform your friends, employees and customers. 
+       Contact us to share your ideas and comments. We welcome news and photos about your Montana wood projects.</p>
+	
+	<div>
+	<a href="https://facebook.com/Buy-Montana-Wood-105373007779273/"><img src="images/facebookdark.png" id="facebook" alt="Facebook Icon"></a> 
+   
+	</div>
+				
+	
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
 
 </div>
+<div id="footerbottom">
+    <h2 id="connect"> CONNECT WITH US</h2><br style="line-height:2px;"/>
+
+    <a href = "https://facebook.com/MontanaDNRC"><div class="facebookdiv"></div></a>
+    <a href = "contact.html"><div style="margin-left:10px;margin-bottom:25px;" id="footerbuttons" class="footerbuttonsclass">Contact Form</div></a> 
+    <a href = "contact.html#sub"> <div style="margin-left:10px;" id="footerbuttons" class="footerbuttonsclass">Subscribe to Our Newsletter</div></a>  
+
+    <div id="smallfootertext">
+        <p  id="footertext">The Montana Wood Products Directory is a collaboration between the Montana Department of Natural Resources and Conservation, the Montana Manufacturers Information System maintained by the University of Montana, and the UM Bureau of Business and Economic Research.<br />
+        <br />
+        &copy;2020 Montana Department of Natural Resources and Conservation</p>
+      
+    </div>
+
+</div>
+</body>
+</html>
