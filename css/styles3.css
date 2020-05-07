@@ -15,7 +15,21 @@
 .backtobutton{
     width:100%;
 }
-	
+.backtobutton1 {
+    position: relative;
+    width: 35vw;
+    height: auto;
+}
+
+.bberlogo{
+    position: relative;
+    top: 0vm;
+    left: 30vm;
+    width: 14.5vw;
+    height: auto;
+    background-color: clear;
+}
+
 #containerLeft{
     width:83%;
     margin-left: 4%;
@@ -607,7 +621,7 @@ a.active {
 	font-size: 1vw;
 	font-weight: 600;
 	}
-#mmisemail {
+.mmisemail1 {
 	position: relative;
 	left:11.62vw;
 	top:-4.5vh;
@@ -784,7 +798,7 @@ a.active {
 	height: auto;
 	background-color:clear;
 }
-.mmisemail {	                    
+.mmisemail1 {	                    
 position: relative;
 top:-1vw;
 left:18vw;
