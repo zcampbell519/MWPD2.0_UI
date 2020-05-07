@@ -4,14 +4,17 @@
 .list-group{
     margin-left:-20px;
 }
+
 .slider-button{
     color:white;
     font-size: 48px;
 }
+
 .slide{
     text-align: center;
 
 }
+
 .backtobutton{
     width:100%;
 }
@@ -168,9 +171,6 @@
     font-family:'Montserrat', helvetica, san-serif;
 }
   
-  /* this and the class for .topnav are the same? */
-
-  
 .topnav a {
     color: #e9e4d1;
     padding: 14px 16px;
@@ -179,27 +179,27 @@
     display: block;
 }
   
-  .topnav a.icon {
+.topnav a.icon {
     background: #4c8a44;
     display: block;
     position: absolute;
     right: 0;
     top: 0;
     color:#21352c;
-  }
+}
 
-  .topnav a:hover {
+.topnav a:hover {
     background-color:#e9e4d1;
     color: #21352c;
-  }
+}
   
-  .activate {
+.activate {
     background-color:#4c8a44;
-  }
+}
 
-  .activate a {
+.activate a {
     color: #21352c !important;
-  }
+}
 
 .headerdiv {
     width:100%;
@@ -210,14 +210,14 @@
 }
 
 body {
-margin:0px;
-padding:0px;
-background-color:#21352c;
+    margin:0px;
+    padding:0px;
+    background-color:#21352c;
 }
 
 a {
 	color:#763813;
-	}
+}
 
 .lefttable {
     width:30%;
@@ -242,7 +242,6 @@ a {
     margin-right:5%;
     font-family: 'Montserrat', sans-serif;
     margin-bottom:50px;
-    
 }
 
 .content-main-nosearch {
@@ -258,8 +257,7 @@ a {
     margin-right:10%;
 	margin-left:10%;
     font-family: 'Montserrat', sans-serif;
-    margin-bottom:50px;
-    
+    margin-bottom:50px;    
 }
 
 h1, h2,h3, h4, h5 {
@@ -269,6 +267,7 @@ h1, h2,h3, h4, h5 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
 }
+
 h6 {
 	color: #21352c;
 	font-size:10px;
@@ -290,7 +289,7 @@ h6 {
     color:#f2cb8a;
     margin-bottom:10px;
     margin-top:0px;
-    }
+}
 
 .content-main {
     width:100%;
@@ -319,7 +318,6 @@ h6 {
 }
 
 .directory {
-    
     height:200px;
     background-image: url("../images/topfooter.jpg");
     background-repeat: no-repeat;
@@ -328,14 +326,12 @@ h6 {
     padding-top:30px;
 }
 
-
 .mwpd {
 	font-size:30px;
     font-weight:700;
     font-family: 'Montserrat', sans-serif;
     color:#21352c;
     margin:0;
-  	
 }
 	
 .update {
@@ -359,21 +355,17 @@ h6 {
     color:#f2cb8a;
     margin-bottom:0px;
     margin-top:0px;
-
 }
 
 .updatebuttonclass:hover {
-background-color:#e9e4d1 !important;
-color:#21352c !important;
+    background-color:#e9e4d1 !important;
+    color:#21352c !important;
 }
 
 .footerbutton:hover {
     color:#f2cb8a !important;
     background-color:#21352c !important;
 }
-
-
-
 
 .footer {
     background-color:#21352c;
@@ -431,9 +423,7 @@ color:#21352c !important;
     display: inline-block;
 }
 
-
 .connect{
-	
 	position:relative;
 	color:#f2cb8a;
     margin:0px;
@@ -444,15 +434,12 @@ color:#21352c !important;
     margin-top:30px;
 }
 
-
 .footertext {
 	font-size: 14px;
 	font-weight: 400;
 	color:#eed79c;
     font-family:'Montserrat', helvetica, san-serif;
     max-width: 700px;
-    
-	
 }
 
 #smallfootertext {
@@ -475,7 +462,7 @@ color:#21352c !important;
     border:2px solid #4c8a44;
     color:#21352c;
     vertical-align:top;
-    }
+}
 
 nav {
     font-family: 'Montserrat', sans-serif;
@@ -486,6 +473,7 @@ nav {
     line-height:156px;
     color:#21352c;
 }
+
 nav a {
     margin-left:15px;
     margin-right:15px;
@@ -504,7 +492,6 @@ a.active {
 }
 
 #formdiv {
-   
     width:80%;
     margin:0 auto;
     padding:1%;
@@ -524,23 +511,22 @@ a.active {
     margin-bottom:35px;
     display:none;
 }
-
 /* Why have this display none Z. Campbell*/
 .topnav {
     display:none;
 }
 
-
-#back {
+.back {
 	position:relative;
 	Top: -23vw;
 	left: 5vw;
 	opacity:.6;
 }
-#next {
+
+.next {
 	position:relative;
 	Top: -23vw;
-	left: 63vw;
+	left: 40vw;
 	opacity:.6;
 }
 
@@ -614,13 +600,13 @@ a.active {
 	font-size: 1vw;
 	font-weight: 600;
 	}
-	#bber2 {
+#bber2 {
 	position: relative;
 	left:24vw;
 	top:-5.5vh;
 	font-size: 1vw;
 	font-weight: 600;
-	}
+}
 #madeinmt {
 	position: relative;
 	left:24vw;
@@ -629,20 +615,7 @@ a.active {
 	font-size: 1vw;
 	font-weight: 600;		
 	}
-#renewable {
-	position: relative;
-	left:-28vw;
-	top: 3.5vh;
-    font-size: 1vw;
-	font-weight: 600;		
-	}
-#madeinmt2 {
-	position: relative;
-	top:3.5vh;
-	left:15.5vw;
-	font-size: 1vw;
-	font-weight: 600;	
-	}
+
 .backtobutton{
 	position:relative;
 	width: 35vw;
